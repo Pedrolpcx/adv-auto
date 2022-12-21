@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gerador de números da Lotofácil</title>
+</head>
+<body>
+	<h1>Gerador de números da Lotofácil</h1>
+
+	<!-- Formulário para o usuário escolher o número de dezenas -->
+	<form>
+		<label for="num-dezenas">Escolha o número de dezenas:</label><br>
+		<input type="number" id="num-dezenas" min="15" max="25"><br>
+		<button type="button" onclick="gerarNumeros()">Gerar números</button>
+	</form>
+
+	<!-- Div para exibir os números gerados -->
+	<div id="resultado"></div>
+
+	<script>
+		// Função para gerar os números aleatórios
+		function gerarNumeros() {
+			// Obtém o número de dezenas escolhido pelo usuário
+			let numDezenas = document.getElementById("num-dezenas").value;
+
+			// Gera uma lista com números aleatórios
